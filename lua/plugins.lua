@@ -17,6 +17,8 @@ return require('packer').startup(function()
   use 'https://github.com/mbbill/undotree.git'
   -- Vimwiki
   use 'vimwiki/vimwiki'
+  -- Git
+  use 'tpope/vim-fugitive'
   -- Lsp Zero
   use {
   'VonHeikemen/lsp-zero.nvim',
