@@ -1,3 +1,6 @@
-require "options"
-require "keymaps"
-require "plugins"
+require('settings')
+require('plugins')
+require('colors')
+require('mappings')
+require('lsp.lang-servers')
+require('lsp.nvim-cmp')

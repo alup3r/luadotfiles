@@ -22,10 +22,7 @@ vim.opt.showmode = true
 vim.opt.termguicolors = true
 vim.opt.completeopt = { "menuone", "noinsert", "noselect" }
 vim.api.nvim_set_option_value("colorcolumn", "80", {})
-
 vim.cmd[[set nohlsearch]]
-vim.cmd[[colorscheme rose-pine]]
-vim.cmd[[highlight Normal guibg=none]]
 
 -- vimwiki path
 vim.g.vimwiki_list = {{path = '~/Documents/vimwiki', syntax = 'markdown', ext = '.md'}}
