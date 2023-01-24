@@ -1,12 +1,15 @@
 return require'packer'.startup(function()
     use 'wbthomason/packer.nvim'
-    use 'rose-pine/neovim'
     use 'vimwiki/vimwiki'
     use 'junegunn/fzf'
     use 'junegunn/fzf.vim'
     use 'https://github.com/mbbill/undotree.git'
     use 'tpope/vim-fugitive'
     use 'https://github.com/preservim/nerdcommenter.git'
+
+    -- colorscheme
+    use { "catppuccin/nvim", as = "catppuccin" }
+    --use 'rose-pine/neovim'
 
     -- treesitter
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
