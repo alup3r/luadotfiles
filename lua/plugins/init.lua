@@ -8,8 +8,8 @@ return require'packer'.startup(function()
     use 'https://github.com/preservim/nerdcommenter.git'
 
     -- colorscheme
-    use { "catppuccin/nvim", as = "catppuccin" }
-    --use 'rose-pine/neovim'
+    use 'rose-pine/neovim'
+    use 'NLKNguyen/papercolor-theme'
 
     -- treesitter
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
