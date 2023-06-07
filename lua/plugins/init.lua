@@ -9,7 +9,6 @@ return require'packer'.startup(function()
 
     -- colorscheme
     use 'rose-pine/neovim'
-    use 'NLKNguyen/papercolor-theme'
 
     -- treesitter
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
