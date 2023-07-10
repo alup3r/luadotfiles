@@ -35,7 +35,7 @@ vim.keymap.set("n", "<leader>gs", ":G<CR>", opts)
 vim.keymap.set("n", "<Leader>pp", ":wincmd n<CR>", opts)
 
 -- vimwikitodo
-vim.keymap.set("n", "<Leader>k", ":VimwikiToggleListItem<CR>", opts)
+vim.keymap.set("n", "<Leader>to", ":VimwikiToggleListItem<CR>", opts)
 
 -- make file executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })

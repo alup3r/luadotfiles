@@ -6,6 +6,10 @@ return require'packer'.startup(function()
     use 'https://github.com/mbbill/undotree.git'
     use 'tpope/vim-fugitive'
     use 'https://github.com/preservim/nerdcommenter.git'
+    use 'nvim-tree/nvim-tree.lua'
+    use 'nvim-tree/nvim-web-devicons'
+    use 'hashivim/vim-terraform'
+    use 'glench/vim-jinja2-syntax'
 
     -- colorscheme
     use 'rose-pine/neovim'
