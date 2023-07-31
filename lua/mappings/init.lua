@@ -23,6 +23,8 @@ vim.keymap.set("n", "<leader>l", "<C-w>l", opts)
 -- FZF mappings
 vim.keymap.set("n", "<C-p>", ":Files<CR>", opts)
 
+vim.keymap.set("n", "<C-y>", ":set invnumber invrelativenumber<CR>", opts)
+
 -- Undotree mappings
 vim.keymap.set("n", "<leader>n", ":UndotreeToggle<CR>", opts)
 
