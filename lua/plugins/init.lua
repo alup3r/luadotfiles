@@ -12,8 +12,7 @@ return require'packer'.startup(function()
     use 'glench/vim-jinja2-syntax'
 
     -- colorscheme
-    --use 'rose-pine/neovim'
-    use 'audibleblink/hackthebox.vim'
+    use 'rose-pine/neovim'
 
     -- treesitter
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }

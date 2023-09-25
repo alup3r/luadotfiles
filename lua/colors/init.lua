@@ -1,3 +1,3 @@
 -- Color settings
-vim.cmd[[colorscheme hackthebox]]
+vim.cmd[[colorscheme rose-pine]]
 vim.cmd[[highlight Normal guibg=none]]
