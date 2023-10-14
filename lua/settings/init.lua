@@ -21,7 +21,7 @@ vim.opt.scrolloff = 8
 vim.opt.showmode = true
 vim.opt.termguicolors = true
 vim.opt.completeopt = { "menuone", "noinsert", "noselect" }
-vim.api.nvim_set_option_value("colorcolumn", "100", {})
+vim.api.nvim_set_option_value("colorcolumn", "80", {})
 vim.cmd[[set nohlsearch]]
 
 -- vimwiki path
