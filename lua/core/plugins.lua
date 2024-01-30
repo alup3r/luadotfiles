@@ -23,6 +23,7 @@ return require('packer').startup(function(use)
   use 'nvim-treesitter/nvim-treesitter'
   use 'https://github.com/mbbill/undotree.git'
   use 'https://github.com/preservim/nerdcommenter.git'
+  use 'vimwiki/vimwiki'
   -- lsp plugins
   use {
     'williamboman/mason.nvim',
