@@ -11,7 +11,7 @@ return {
         config = function()
             -- setup mason with default parameters
             require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls", "ts_ls", "jdtls", "pyright" },
+                ensure_installed = { "lua_ls", "tsserver", "jdtls", "pyright" },
             })
         end
     },
@@ -45,7 +45,7 @@ return {
             })
 
             -- setup the typescript language server
-            lspconfig.ts_ls.setup({
+            lspconfig.tsserver.setup({
                 capabilities = capabilities
             })
 
@@ -72,7 +72,7 @@ return {
 
             -- set vim motion for <SPACE> + c + a for displaying code action
             -- suggestions for code diagnostics in both normal and visual mode
-            vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "[C]ode [A]ctions" })
+            vim.keymap.set("n", "<leader>cv", vim.lsp.buf.code_action, { desc = "[C]ode [A]ctions" })
 
             -- set vim motion for <SPACE> + c + r to display references for the
             -- code under the cursor
