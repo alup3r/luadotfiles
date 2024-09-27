@@ -11,7 +11,7 @@ return {
         config = function()
             -- setup mason with default parameters
             require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls", "tsserver", "jdtls", "pyright" },
+                ensure_installed = { "lua_ls", "ts_ls", "jdtls", "pyright" },
             })
         end
     },
@@ -45,7 +45,7 @@ return {
             })
 
             -- setup the typescript language server
-            lspconfig.tsserver.setup({
+            lspconfig.ts_ls.setup({
                 capabilities = capabilities
             })
 
