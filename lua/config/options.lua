@@ -34,3 +34,9 @@ vim.opt.hlsearch = false -- highlight all matches in search
 vim.opt.incsearch = true
 vim.opt.ignorecase = true -- ignore case in search
 vim.opt.smartcase = true -- match case if explicitly stated
+
+-- Undotree behaviors
+HOME = os.getenv("HOME")
+vim.opt.swapfile = false
+vim.opt.undodir = HOME .. "/.config/undodir"
+vim.opt.undofile = true
