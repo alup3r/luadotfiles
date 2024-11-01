@@ -17,8 +17,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="af-magic"
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -86,7 +85,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-export EDITOR="/opt/homebrew/bin/nvim"
+export EDITOR="/usr/bin/nvim"
 
 # User configuration
 set -o vi
@@ -109,11 +108,11 @@ export NODE_NO_WARNINGS=1
 alias lrt="ls -lhrt"
 alias codecommit="cd ~/code/aws/codecommit/"
 alias pk="pkill ssh"
-alias vim="/opt/homebrew/bin/nvim"
+alias vim="/usr/bin/nvim"
 alias codebash="cd ~/Code/Sandbox/bash_labs/"
 alias codeansible="cd ~/Code/ansible/ansible_labs/"
 alias codepy="cd ~/Code/Python"
-alias cdc="cd ~/Code/aws/repos/dotfiles"
+alias cdc="cd ~/Code/repos/luadotfiles"
 alias cci="cd ~/Code/aws/codecommit"
 alias tma="tmux attach-session -t 0"
 alias cdkt="cd /Users/aluper/Code/aws/cdk_workshop/environments/typescript"
