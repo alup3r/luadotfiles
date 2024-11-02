@@ -12,7 +12,7 @@ return {
             -- setup mason with default parameters
             require("mason-lspconfig").setup({
                 ensure_installed = {
-                    "lua_ls", "ts_ls", "jdtls", "pyright", "solargraph"
+                    "lua_ls", "ts_ls", "jdtls", "pyright", "ruby_lsp"
                 },
             })
         end
@@ -42,7 +42,7 @@ return {
             local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
             -- setup the ruby language server
-            lspconfig.solargraph.setup({
+            lspconfig.ruby_lsp.setup({
                 capabilities = capabilities
             })
 
