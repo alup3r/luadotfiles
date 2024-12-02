@@ -32,9 +32,10 @@ set -o vi
 
 # TMUXIFIER CONFIG
 export PATH="$HOME/.tmuxifier/bin:$PATH"
-alias tx="/Users/aluper/.tmuxifier/bin/tmuxifier"
+alias tx="/home/aluper/.tmuxifier/bin/tmuxifier"
 alias tkill="tmux kill-session -t syseng"
 alias tmx="tmuxifier load-session syseng"
+alias tmedit="tmuxifier edit-session syseng"
 # TMUXIFIER CONFIG
 
 # ALIASES
@@ -52,8 +53,7 @@ alias cdkt="cd /Users/aluper/Code/aws/cdk_workshop/environments/typescript"
 alias ipython="ipython --TerminalInteractiveShell.editing_mode=vi"
 
 # export MANPATH="/usr/local/man:$MANPATH"
-export PATH=$PATH:/Users/aluper/.local/bin
-export PATH=$PATH:/Users/aluper/.ebcli-virtual-env/executables
+export PATH=$PATH:$HOME/.local/bin
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
