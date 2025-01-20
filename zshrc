@@ -25,20 +25,29 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+
+# Path exports
 export EDITOR="/usr/bin/nvim"
+export PATH="$PATH:$HOME/.tmuxifier/bin"
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:/usr/libexec"
+
+# Vagrant exports
+export VAGRANT_DEFAULT_PROVIDER=libvirt
 
 # User configuration
 set -o vi
 
 # TMUXIFIER CONFIG
-export PATH="$HOME/.tmuxifier/bin:$PATH"
+alias tmx='tmux attach -t linux || tmux new -s linux'
 alias tx="/home/aluper/.tmuxifier/bin/tmuxifier"
 alias tkill="tmux kill-session -t syseng"
-alias tmx="tmuxifier load-session syseng"
 alias tmedit="tmuxifier edit-session syseng"
 # TMUXIFIER CONFIG
 
 # ALIASES
+alias open="gio open"
 alias lrt="ls -lhrt"
 alias codecommit="cd ~/code/aws/codecommit/"
 alias pk="pkill ssh"
@@ -51,9 +60,9 @@ alias cci="cd ~/Code/aws/codecommit"
 alias tma="tmux attach-session -t 0"
 alias cdkt="cd /Users/aluper/Code/aws/cdk_workshop/environments/typescript"
 alias ipython="ipython --TerminalInteractiveShell.editing_mode=vi"
-
-# export MANPATH="/usr/local/man:$MANPATH"
-export PATH=$PATH:$HOME/.local/bin
+alias pd="/usr/bin/podman"
+alias pdc="/usr/bin/podman-compose"
+alias pbcopy="xclip -selection clipboard"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

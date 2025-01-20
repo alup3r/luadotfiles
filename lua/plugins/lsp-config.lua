@@ -41,6 +41,25 @@ return {
 
             local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
+            -- Rust setup
+            lspconfig.rust_analyzer.setup({
+                capabilities = capabilities,
+                settings = {
+                    ['rust-analyzer'] = {
+                        assist = {
+                            importGranularity = "module",
+                            importPrefix = "by_self",
+                        },
+                        cargo = {
+                            loadOutDirsFromCheck = true
+                        },
+                        procMacro = {
+                            enable = true
+                        }
+                    }
+                }
+            })
+
             -- setup the ruby language server
             lspconfig.solargraph.setup({
                 capabilities = capabilities
