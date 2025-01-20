@@ -67,6 +67,9 @@ alias pd="/usr/bin/podman"
 alias pdc="/usr/bin/podman-compose"
 alias pbcopy="xclip -selection clipboard"
 alias lz="/usr/bin/lazygit"
+alias cat="/usr/bin/bat"
+alias ls="/usr/bin/lsd"
+alias help="/usr/bin/tldr"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
