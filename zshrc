@@ -26,6 +26,9 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+# fzf settings
+source <(fzf --zsh)
+
 # Path exports
 export EDITOR="/usr/bin/nvim"
 export PATH="$PATH:$HOME/.tmuxifier/bin"
@@ -63,6 +66,7 @@ alias ipython="ipython --TerminalInteractiveShell.editing_mode=vi"
 alias pd="/usr/bin/podman"
 alias pdc="/usr/bin/podman-compose"
 alias pbcopy="xclip -selection clipboard"
+alias lz="/usr/bin/lazygit"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
