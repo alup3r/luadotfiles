@@ -21,3 +21,19 @@ vim.keymap.set("n", "<leader>g", ":VimwikiToggleListItem<CR>")
 
 -- Undotree mappings
 vim.keymap.set("n", "<leader>n", ":UndotreeToggle<CR>")
+
+-- TSNode run
+vim.api.nvim_set_keymap('n', '<leader>hh', ':lua RunTSNode()<CR>', { noremap = true, silent = true })
+
+function RunTSNode()
+  local script = vim.fn.input('Enter script path: ')
+  vim.cmd('!' .. 'ts-node ' .. script)
+end
+
+-- Python run
+vim.api.nvim_set_keymap('n', '<leader>py', ':lua RunPythonScript()<CR>', { noremap = true, silent = true })
+
+function RunPythonScript()
+  local script = vim.fn.input('Enter Python script path: ')
+  vim.cmd('!' .. 'python3 ' .. script)
+end
