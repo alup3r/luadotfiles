@@ -12,7 +12,7 @@ return {
             -- setup mason with default parameters
             require("mason-lspconfig").setup({
                 ensure_installed = {
-                    "lua_ls", "ts_ls", "jdtls", "pyright", "solargraph"
+                    "lua_ls", "ts_ls", "jdtls", "pyright"
                 },
             })
         end
@@ -58,11 +58,6 @@ return {
                         }
                     }
                 }
-            })
-
-            -- setup the ruby language server
-            lspconfig.solargraph.setup({
-                capabilities = capabilities
             })
 
             -- setup the lua language server
