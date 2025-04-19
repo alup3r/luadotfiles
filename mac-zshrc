@@ -1,0 +1,18 @@
+# Enable colors in terminal output
+# For BSD `ls` (macOS default)
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
+# Enable colored output for grep
+export GREP_OPTIONS='--color=auto'
+
+# set up vim motions
+set -o vi
+
+# user alias
+alias vim="/opt/homebrew/bin/nvim"
+alias ll='ls -l'
+alias la='ls -la'
+alias g="/opt/homebrew/bin/ghostty"
+alias cdm="cd /Users/aluper/code/mac-dotfiles"
+alias cdc="cd /Users/aluper/Code/gitrepos/luadotfiles"
