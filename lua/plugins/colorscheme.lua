@@ -1,10 +1,10 @@
 return {
     -- shorthand github url
-    "rose-pine/neovim",
+    "shaunsingh/nord.nvim",
     lazy = false,
     priority = 1000,
     config = function()
-        vim.cmd.colorscheme "rose-pine"
+        vim.cmd.colorscheme "nord"
         vim.cmd[[highlight Normal guibg=None]]
     end
 }
