@@ -12,26 +12,10 @@ return {
             -- setup mason with default parameters
             require("mason-lspconfig").setup({
                 ensure_installed = {
-                    "lua_ls", "ts_ls", "jdtls", "pyright"
+                    "lua_ls", "ts_ls", "pyright", "clangd"
                 },
             })
         end
-    },
-    {
-        "jay-babu/mason-nvim-dap.nvim",
-        config = function()
-            -- ensure the java debug adapter is installed
-            require("mason-nvim-dap").setup({
-                ensure_installed = { "java-debug-adapter", "java-test" }
-            })
-        end
-    },
-    -- utility plugin for configuring the java language server
-    {
-        "mfussenegger/nvim-jdtls",
-        dependencies = {
-            "mfussenegger/nvim-dap",
-        }
     },
     {
         "neovim/nvim-lspconfig",
@@ -62,6 +46,11 @@ return {
 
             -- setup the lua language server
             lspconfig.lua_ls.setup({
+                capabilities = capabilities
+            })
+
+            -- setup the cland language server
+            lspconfig.clangd.setup({
                 capabilities = capabilities
             })
 
