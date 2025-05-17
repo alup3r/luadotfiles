@@ -21,7 +21,7 @@ vim.api.nvim_set_option_value("colorcolumn", "80", {})
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.opt.backup = false -- disable backup file creation
---vim.opt.clipboard = "unnamedplus" -- enable system clipboard access
+vim.opt.clipboard = "unnamedplus" -- enable system clipboard access
 vim.opt.conceallevel = 0 -- show concealed characters in md files
 vim.opt.fileencoding = "utf-8" -- set file encoding to UTF-8
 vim.opt.showmode = false -- hide mode display
