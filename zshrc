@@ -4,7 +4,6 @@ ZSH_THEME="avit"
 
 plugins=(
 	git
-	zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -38,3 +37,4 @@ alias lz="/usr/bin/lazygit"
 alias cat="/usr/bin/bat"
 alias ls="/usr/bin/lsd"
 alias help="/usr/bin/tldr"
+alias minecraft="~/.local/bin/minecraft-launcher"
