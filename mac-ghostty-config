@@ -1,4 +1,6 @@
-theme = Atom
+theme = Ghostty Default StyleDark
+font-size = 16
 keybind = ctrl+shift+c=copy_to_clipboard
 keybind = ctrl+shift+v=paste_from_clipboard
 keybind = ctrl+shift+comma=reload_config
+window-decoration = none
