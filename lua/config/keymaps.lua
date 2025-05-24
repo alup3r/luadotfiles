@@ -38,3 +38,8 @@ function RunPythonScript()
   local script = vim.fn.input('Enter Python script path: ')
   vim.cmd('!' .. 'python3 ' .. script)
 end
+
+-- Print diagnostics
+vim.keymap.set("n", "<leader>fd", function()
+  vim.diagnostic.open_float(nil, { focus = false })
+end, { desc = "Show diagnostics in float" })
