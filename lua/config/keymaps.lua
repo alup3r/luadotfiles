@@ -10,7 +10,8 @@ vim.keymap.set("n", "<leader>k", "<C-w>k")
 vim.keymap.set("n", "<leader>l", "<C-w>l")
 
 -- new buffer vertical split
-vim.api.nvim_set_keymap('n', '<C-w>n', ':vnew<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-w>n', ':rightbelow vnew<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>ll', ':vertical resize +47<CR>', { noremap = true, silent = true })
 
 -- make file executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>")
