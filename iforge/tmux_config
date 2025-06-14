@@ -1,0 +1,65 @@
+# source
+unbind r
+bind r source-file ~/.config/tmux/tmux.conf
+
+# set both windows and panes to start at 1
+set-option -g base-index 1
+set-option -g pane-base-index 1
+
+# remap prefix from 'C-b' to 'C-k'
+unbind C-b
+set-option -g prefix C-k
+bind-key C-k send prefix
+
+# split panes using | and -
+bind | split-window -h
+bind - split-window -v
+unbind '"'
+unbind %
+
+# select pane
+bind k select-pane -U
+bind j select-pane -D
+bind h select-pane -R
+bind l select-pane -L
+
+# resize panes
+bind -r 8 resize-pane -U 5 
+bind -r 9 resize-pane -D 5 
+bind -r 7 resize-pane -L 5 
+bind -r 0 resize-pane -R 5 
+bind -r 1 resize-pane -L 49
+
+# cheat sheet
+bind -r i run-shell "tmux neww /usr/local/bin/cht"
+
+# vim navigation
+set -g base-index 1
+
+set-window-option -g mode-keys vi
+bind-key -T copy-mode-vi v send-keys -X begin-selection
+bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel 'xclip -in -selection clipboard'
+
+# Colors
+set -g default-terminal "screen-256color"
+
+# performance
+set-option -sg escape-time 10
+set-option -g focus-events on
+set-option -sa terminal-overrides ',screen-256color:RGB'
+
+#set -g status-bg blue
+#set -g pane-active-border-style fg=blue
+
+# Plugins
+#set -g @plugin 'tmux-plugins/tpm'
+
+## rose-pine plugin
+#set -g @plugin 'rose-pine/tmux'
+#set -g @rose_pine_variant 'main'
+#set -g @rose_pine_host 'on'
+#set -g @rose_pine_date_time '%H:%M:%S'
+#set -g @rose_pine_user 'on'
+#set -g @rose_pine_bar_bg_disable 'on'
+
+#run '~/.tmux/plugins/tpm/tpm'
