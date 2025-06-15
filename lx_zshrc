@@ -30,7 +30,8 @@ alias vim=/usr/bin/nvim
 alias g=/usr/bin/ghostty
 alias tmuxreload='tmux source-file ~/.config/tmux/tmux.conf'
 alias cdc='cd ~/Code/gitrepos/luadotfiles'
-alias pd=/usr/bin/podman
+alias pod=/usr/bin/podman
+alias pd=/usr/bin/podman-compose
 
 
 export PATH=~/.local/bin:$PATH
