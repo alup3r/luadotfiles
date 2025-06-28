@@ -26,6 +26,7 @@ PROMPT='%n@%m%:%F{blue}%~%f$(git_status)
 setopt PROMPT_SUBST
 
 
+alias vi=/usr/bin/nvim
 alias vim=/usr/bin/nvim
 alias g=/usr/bin/ghostty
 alias tmuxreload='tmux source-file ~/.config/tmux/tmux.conf'
@@ -33,6 +34,7 @@ alias cdc='cd ~/Code/repos/luadotfiles'
 alias pod=/usr/bin/podman
 alias pd=/usr/bin/podman-compose
 alias pbcopy="xclip -selection clipboard"
+alias ipython="ipython --TerminalInteractiveShell.editing_mode=vi"
 
 
 export PATH=~/.local/bin:$PATH
