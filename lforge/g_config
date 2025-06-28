@@ -1,0 +1,6 @@
+theme = Atom
+font-family = Hack Nerd Font Mono
+font-size = 13
+window-decoration = none
+window-width = 120
+window-height = 40
