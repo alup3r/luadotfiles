@@ -1,3 +1,4 @@
+# Terminal VIM mode
 set -o vi
 
 
@@ -16,9 +17,10 @@ function git_status() {
   fi
 }
 
+
 # Set the prompt with git information
 setopt PROMPT_SUBST
-PROMPT='%n@%m%:%F{blue}%~%f$(git_status)
+PROMPT='%n@%m%: %F{blue}%~%f$(git_status)
 %F{blue}→%f '
 
 
@@ -30,7 +32,7 @@ alias vi=/usr/bin/nvim
 alias vim=/usr/bin/nvim
 alias g=/usr/bin/ghostty
 alias tmuxreload='tmux source-file ~/.config/tmux/tmux.conf'
-alias cdc='cd ~/Code/repos/luadotfiles'
+alias cdc='cd ~/Code/repos/luadotfiles/iforge'
 alias pod=/usr/bin/podman
 alias pd=/usr/bin/podman-compose
 alias pbcopy="xclip -selection clipboard"
